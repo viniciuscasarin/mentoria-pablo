@@ -1,0 +1,25 @@
+<html>
+  <body>
+    <h1 id="CounterText">0</h1>
+    <button id="DecreaseButton" class="button" onclick="decrease()">-</button>
+    <button id="IncreaseButton" class="button" onclick="increase()">+</button>
+  </body>
+
+  <style>
+    .button {
+      width: 100px;
+    }
+  </style>
+
+  <script>
+    function increase() {
+      var x = document.getElementById("CounterText");
+      x.innerHTML = parseInt(x.innerHTML) + 1;
+    }
+
+    function decrease() {
+      var x = document.getElementById("CounterText");
+      x.innerHTML = parseInt(x.innerHTML) - 1;
+    }
+  </script>
+</html>
